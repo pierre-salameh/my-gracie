@@ -1805,3 +1805,344 @@ body::after{
 
 }
 
+
+
+
+
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width:1024px){
+
+  .hero-title{
+    font-size:5rem;
+  }
+
+  .hero-moon{
+    width:240px;
+    height:240px;
+  }
+
+  .orbit-container{
+    width:500px;
+    height:500px;
+  }
+
+  .time-node{
+    width:120px;
+    height:120px;
+  }
+
+  .cosmic-book{
+    width:90%;
+    height:500px;
+  }
+
+  .book-title,
+  .timeline h2,
+  .soundtrack h2,
+  .counter-title h2,
+  .love-message h2{
+    font-size:3rem;
+  }
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width:768px){
+
+  .navbar{
+
+    width:95%;
+    height:auto;
+
+    padding:15px;
+
+    flex-direction:column;
+
+    gap:10px;
+  }
+
+  .navbar-links{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:12px;
+  }
+
+  .navbar-links button{
+
+    font-size:.8rem;
+  }
+
+  .lunar-timeline{
+
+    display:none;
+  }
+
+  .hero{
+
+    padding:120px 20px 80px;
+  }
+
+  .hero-moon{
+
+    width:180px;
+    height:180px;
+
+    margin-bottom:25px;
+  }
+
+  .hero-title{
+
+    font-size:3rem;
+
+    line-height:1.1;
+  }
+
+  .hero-subtitle{
+
+    font-size:1rem;
+
+    letter-spacing:2px;
+  }
+
+  .hero-quote{
+
+    font-size:1rem;
+
+    line-height:1.8;
+  }
+
+  .hero-button{
+
+    padding:15px 28px;
+  }
+
+  .counter-title h2{
+
+    font-size:2.5rem;
+  }
+
+  .orbit-container{
+
+    width:320px;
+    height:320px;
+  }
+
+  .time-node{
+
+    width:80px;
+    height:80px;
+  }
+
+  .time-node h3{
+
+    font-size:1.2rem;
+  }
+
+  .orbit-top{
+
+    top:-40px;
+  }
+
+  .orbit-bottom{
+
+    bottom:-40px;
+  }
+
+  .orbit-right{
+
+    right:-40px;
+  }
+
+  .orbit-left{
+
+    left:-40px;
+  }
+
+  .moon-glow{
+
+    width:140px;
+    height:140px;
+  }
+
+  .moon-center h4{
+
+    font-size:1.2rem;
+
+    letter-spacing:4px;
+  }
+
+  .soundtrack{
+
+    padding:100px 20px;
+  }
+
+  .soundtrack h2{
+
+    font-size:2.5rem;
+  }
+
+  .soundtrack-grid{
+
+    gap:20px;
+  }
+
+  .music-star{
+
+    width:100%;
+    max-width:320px;
+  }
+
+  .book-title{
+
+    font-size:2.5rem;
+  }
+
+  .book-wrapper{
+
+    width:100%;
+
+    gap:15px;
+  }
+
+  .cosmic-book{
+
+    width:100%;
+    height:500px;
+  }
+
+  .memory-page{
+
+    padding:25px;
+  }
+
+  .memory-page h3{
+
+    font-size:2rem;
+  }
+
+  .memory-page p{
+
+    font-size:1rem;
+  }
+
+  .book-arrow{
+
+    width:55px;
+    height:55px;
+  }
+
+  .love-message{
+
+    padding:100px 20px;
+  }
+
+  .love-message div{
+
+    padding:30px;
+  }
+
+  .love-message h2{
+
+    font-size:2.5rem;
+  }
+
+  .love-message p{
+
+    font-size:1rem;
+  }
+
+  .gallery{
+
+    gap:20px;
+  }
+
+  .glass-card{
+
+    width:100%;
+    max-width:350px;
+  }
+
+  .glass-card img{
+
+    height:350px;
+  }
+
+  .shooting-star{
+
+    display:none;
+  }
+
+  .meteor-wrapper{
+
+    display:none;
+  }
+
+}
+
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width:480px){
+
+  .hero-title{
+
+    font-size:2.4rem;
+  }
+
+  .hero-subtitle{
+
+    font-size:.9rem;
+  }
+
+  .counter-title h2{
+
+    font-size:2rem;
+  }
+
+  .soundtrack h2{
+
+    font-size:2rem;
+  }
+
+  .book-title{
+
+    font-size:2rem;
+  }
+
+  .love-message h2{
+
+    font-size:2rem;
+  }
+
+  .orbit-container{
+
+    width:280px;
+    height:280px;
+  }
+
+  .time-node{
+
+    width:70px;
+    height:70px;
+  }
+
+  .time-node h3{
+
+    font-size:1rem;
+  }
+
+}
