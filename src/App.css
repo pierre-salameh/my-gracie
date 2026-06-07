@@ -112,15 +112,13 @@ body{
   top:80px;
   right:120px;
 
-  z-index:100;
+  z-index:99999;
 
-  transform:translate3d(0,0,0);
+  pointer-events:none;
 
-  will-change:transform;
+  font-size:5rem;
 
-  backface-visibility:hidden;
-
-  -webkit-backface-visibility:hidden;
+  color:#fde047;
 
   text-shadow:
     0 0 20px #fde047,
