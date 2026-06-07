@@ -2093,10 +2093,12 @@ body::after{
     max-width:350px;
   }
 
-  .glass-card img{
+.glass-card img{
 
-    height:350px;
-  }
+  width:100%;
+  height:auto;
+  display:block;
+}
 
   .shooting-star{
 
