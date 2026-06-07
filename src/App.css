@@ -106,16 +106,21 @@ body{
 
 
 .gracie-star{
+
   position:fixed;
 
   top:80px;
   right:120px;
 
-  font-size:5rem;
-
-  color:#fde047;
-
   z-index:100;
+
+  transform:translate3d(0,0,0);
+
+  will-change:transform;
+
+  backface-visibility:hidden;
+
+  -webkit-backface-visibility:hidden;
 
   text-shadow:
     0 0 20px #fde047,
@@ -1808,9 +1813,6 @@ body::after{
 
 
 
-
-
-
 /* ========================= */
 /* TABLET */
 /* ========================= */
@@ -1857,6 +1859,24 @@ body::after{
 /* ========================= */
 
 @media (max-width:768px){
+
+  .gracie-star{
+
+    top:25px;
+    right:20px;
+
+    font-size:3.5rem;
+
+    transform:translateZ(0);
+
+    will-change:transform;
+
+    backface-visibility:hidden;
+
+    -webkit-backface-visibility:hidden;
+
+    contain:layout style paint;
+  }
 
   .navbar{
 
@@ -2097,6 +2117,14 @@ body::after{
 /* ========================= */
 
 @media (max-width:480px){
+
+  .gracie-star{
+
+    top:20px;
+    right:15px;
+
+    font-size:3rem;
+  }
 
   .hero-title{
 
