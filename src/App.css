@@ -2144,12 +2144,33 @@ body::after{
 
   .gracie-star{
 
-  top:65px;
-  right:10px;
+    position:fixed;
 
-  width:60px;
-  height:60px;
-}
+    top:80px;
+    right:15px;
+
+    width:65px;
+    height:65px;
+
+    z-index:9999;
+  }
+
+  .gracie-star-image{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+  }
+
+  .star-name{
+
+    font-size:.7rem;
+
+    letter-spacing:1px;
+
+    margin-top:4px;
+  }
 
   .hero-title{
 
