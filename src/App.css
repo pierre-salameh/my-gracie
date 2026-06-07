@@ -1917,6 +1917,17 @@ body::after{
 
   .lunar-timeline{
 
+    left:8px;
+
+    top:50%;
+
+    transform:translateY(-50%) scale(.7);
+
+    height:55vh;
+  }
+
+  .timeline-item span{
+
     display:none;
   }
 
