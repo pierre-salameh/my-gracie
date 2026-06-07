@@ -104,7 +104,6 @@ body{
   display:block;
 }
 
-
 .gracie-star{
 
   position:fixed;
@@ -112,28 +111,34 @@ body{
   top:80px;
   right:120px;
 
-  z-index:99999;
+  width:90px;
+  height:90px;
+
+  z-index:9999;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 
   pointer-events:none;
+}
 
-  font-size:5rem;
+.gracie-star-image{
 
-  color:#fde047;
+  width:100%;
+  height:100%;
 
-  text-shadow:
-    0 0 20px #fde047,
-    0 0 40px #fde047,
-    0 0 80px #fde047,
-    0 0 120px #fde047;
+  object-fit:contain;
+
+  filter:
+    drop-shadow(0 0 15px #fde047)
+    drop-shadow(0 0 35px #fde047)
+    drop-shadow(0 0 60px #fde047);
 }
 
 .star-name{
-  position:absolute;
 
-  top:100%;
-  left:50%;
-
-  transform:translateX(-50%);
+  margin-top:8px;
 
   color:white;
 
@@ -1859,23 +1864,30 @@ body::after{
 
 @media (max-width:768px){
 
-  .gracie-star{
+.gracie-star{
 
-    top:25px;
-    right:20px;
+  top:70px;
+  right:15px;
 
-    font-size:3.5rem;
+  width:70px;
+  height:70px;
 
-    transform:translateZ(0);
+  transform:translateZ(0);
 
-    will-change:transform;
+  will-change:transform;
 
-    backface-visibility:hidden;
+  backface-visibility:hidden;
 
-    -webkit-backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
 
-    contain:layout style paint;
-  }
+  contain:layout style paint;
+}
+
+.star-name{
+
+  font-size:.8rem;
+  letter-spacing:2px;
+}
 
   .navbar{
 
@@ -2121,11 +2133,12 @@ body::after{
 
   .gracie-star{
 
-    top:20px;
-    right:15px;
+  top:65px;
+  right:10px;
 
-    font-size:3rem;
-  }
+  width:60px;
+  height:60px;
+}
 
   .hero-title{
 
@@ -2195,8 +2208,3 @@ body,
 }
 
 
-.gracie-star-image{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-}
