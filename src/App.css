@@ -80,29 +80,7 @@ body{
   flex-wrap:wrap;
 }
 
-.glass-card{
 
-  width:350px;
-
-  border-radius:30px;
-
-  overflow:hidden;
-
-  background:rgba(255,255,255,.05);
-
-  backdrop-filter:blur(20px);
-
-  transition:.5s;
-}
-
-.glass-card:hover{
-  transform:translateY(-10px);
-}
-
-.glass-card img{
-  width:100%;
-  display:block;
-}
 
 .gracie-star{
 
@@ -310,41 +288,81 @@ body::after{
 .glass-card{
 
   width:350px;
-
-  border-radius:30px;
+  aspect-ratio:3/4;
 
   overflow:hidden;
+
+  border-radius:40px;
+  position:relative;
 
   background:rgba(255,255,255,.05);
 
   backdrop-filter:blur(20px);
 
-  border:1px solid rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.08);
 
   box-shadow:
-    0 0 20px rgba(37,99,235,.2);
+    0 0 20px rgba(37,99,235,.15),
+    inset 0 1px 1px rgba(255,255,255,.1);
 
   transition:.5s;
-
-  transform-style:preserve-3d;
 }
 
 .glass-card:hover{
 
+  transform:translateY(-8px);
+
   box-shadow:
-    0 0 40px rgba(96,165,250,.5),
-    0 0 80px rgba(96,165,250,.2);
+    0 0 30px rgba(96,165,250,.3),
+    0 0 70px rgba(96,165,250,.15);
+
 }
+
+
+
+.glass-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  border-radius:40px;
+
+  padding:1px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.3),
+      rgba(96,165,250,.15),
+      transparent
+    );
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite:xor;
+
+  pointer-events:none;
+}
+
 
 .glass-card img{
 
   width:100%;
-
-  height:450px;
+  height:100%;
 
   object-fit:cover;
 
-  display:block;
+  transition:.8s;
+}
+
+.glass-card:hover img{
+
+  transform:scale(1.05);
 }
 
 
@@ -2213,7 +2231,7 @@ body::after{
 
     font-size:1rem;
   }
-  
+
     .shooting-star,
   .meteor-wrapper{
     display:flex !important;

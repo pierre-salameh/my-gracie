@@ -14,7 +14,7 @@ export default function Gallery() {
         }}
       >
         <img
-          src="/assets/pie2.jpg"
+          src="/assets/pie1.jpg"
           alt="Me"
         />
       </motion.div>
@@ -28,7 +28,22 @@ export default function Gallery() {
         }}
       >
         <img
-          src="/assets/pie.jpg"
+          src="/assets/pie2.jpg"
+          alt="Gracie"
+        />
+      </motion.div>
+
+
+        <motion.div
+        className="glass-card"
+        whileHover={{
+          rotateY: -10,
+          rotateX: 5,
+          scale: 1.05
+        }}
+      >
+        <img
+          src="/assets/pie3.jpg"
           alt="Gracie"
         />
       </motion.div>
@@ -44,7 +59,7 @@ export default function Gallery() {
         }}
       >
         <img
-          src="/assets/pie3.jpg"
+          src="/assets/pie4.jpg"
           alt="Me"
         />
       </motion.div>
@@ -59,7 +74,7 @@ export default function Gallery() {
         }}
       >
         <img
-          src="/assets/pie4.jpg"
+          src="/assets/pie5.jpg"
           alt="Me"
         />
       </motion.div>
