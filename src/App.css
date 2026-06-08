@@ -2123,14 +2123,9 @@ body::after{
   display:block;
 }
 
-  .shooting-star{
-
-    display:none;
-  }
-
+  .shooting-star,
   .meteor-wrapper{
-
-    display:none;
+    display:flex !important;
   }
 
 }
@@ -2217,6 +2212,11 @@ body::after{
   .time-node h3{
 
     font-size:1rem;
+  }
+  
+    .shooting-star,
+  .meteor-wrapper{
+    display:flex !important;
   }
 
 }
