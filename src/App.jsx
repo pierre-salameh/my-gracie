@@ -11,6 +11,7 @@ import Constellation from "./components/Constellation";
 import GracieUniverse from "./components/GracieUniverse";
 import Navbar from "./components/Navbar";
 import LunarTimeline from "./components/LunarTimeline";
+import ShootingStar from "./components/ShootingStar";
 
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
  
   
       <StarField />
-     
+     <ShootingStar />
+           <ShootingStar />
+           <ShootingStar />
 
       <Hero />
       
