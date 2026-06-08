@@ -2100,14 +2100,19 @@ body::after{
 
   .glass-card{
 
-    width:100%;
-    max-width:350px;
-  }
+  width:100%;
+  max-width:350px;
+
+  aspect-ratio:3/4;
+}
 
 .glass-card img{
 
   width:100%;
-  height:auto;
+  height:100%;
+
+  object-fit:cover;
+
   display:block;
 }
 
