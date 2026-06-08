@@ -38,6 +38,13 @@ export default function Hero() {
       <ShootingStar />
       <ShootingStar />
       <ShootingStar />
+      <ShootingStar />
+      <ShootingStar />
+      <ShootingStar />
+        <ShootingStar />
+      <ShootingStar />
+      <ShootingStar />
+      <ShootingStar />
 
       <motion.div
         className="hero-content"
