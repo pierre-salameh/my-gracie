@@ -443,13 +443,15 @@ body::after{
 
 
 
-.universe-section {
+.universe-section{
 
-  width: 100%;
+  width:100%;
 
-  height: 100vh;
+  height:80vh;
 
-  position: relative;
+  min-height:650px;
+
+  position:relative;
 }
 
 
