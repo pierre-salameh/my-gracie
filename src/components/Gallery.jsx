@@ -30,10 +30,12 @@ const images = [
 
 export default function Gallery() {
   return (
+    
     <section
       className="gallery"
       id="gallery"
     >
+        
       {images.map((image, index) => (
         <motion.div
           key={index}
