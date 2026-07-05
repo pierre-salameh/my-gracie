@@ -20,7 +20,7 @@ export default function Gallery() {
         }}
       >
         <img
-          src="/assets/pie66.jpg"
+          src="/assets/pie77.jpg"
           alt="Me"
         />
       </motion.div>
