@@ -1873,6 +1873,36 @@ body::after{
   contain:layout style paint;
 }
 
+
+
+
+
+
+
+
+
+.universe-section{
+
+  width:100%;
+
+  height:60vh;
+
+  min-height:650px;
+
+  position:relative;
+}
+
+
+
+
+.moon-section{
+  min-height:60vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
 .star-name{
 
   font-size:.8rem;
