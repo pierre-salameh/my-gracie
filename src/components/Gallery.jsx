@@ -5,6 +5,30 @@ export default function Gallery() {
     <section className="gallery"
     id="gallery">
 
+
+
+
+
+
+
+ <motion.div
+        className="glass-card"
+        whileHover={{
+          rotateY: 10,
+          rotateX: 5,
+          scale: 1.05
+        }}
+      >
+        <img
+          src="/assets/pie66.jpg"
+          alt="Me"
+        />
+      </motion.div>
+
+
+
+
+
       <motion.div
         className="glass-card"
         whileHover={{
