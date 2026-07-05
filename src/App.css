@@ -2276,10 +2276,167 @@ body::after{
     font-size:1rem;
   }
 
-  .gallery{
 
-    gap:20px;
-  }
+.gallery{
+
+  position:relative;
+
+  width:min(1100px,92%);
+
+  margin:auto;
+
+  padding:150px 0;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:120px;
+
+}
+
+
+
+
+
+.gallery::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  bottom:0;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:4px;
+
+  border-radius:999px;
+
+  background:linear-gradient(
+      to bottom,
+      transparent,
+      rgba(96,165,250,.9),
+      rgba(37,99,235,.9),
+      transparent
+  );
+
+  box-shadow:
+      0 0 20px rgba(96,165,250,.5);
+
+}
+
+
+
+
+.gallery-item{
+
+  position:relative;
+
+  display:flex;
+
+  align-items:center;
+
+}
+
+.gallery-item.left{
+
+  justify-content:flex-start;
+   padding-right:55%;
+
+}
+
+.gallery-item.right{
+
+  justify-content:flex-end;
+  padding-left:55%;
+
+}
+
+
+
+
+
+.gallery-item::before{
+
+  content:"";
+
+  position:absolute;
+
+  left:50%;
+  top:50%;
+
+  transform:translate(-50%,-50%);
+
+  width:18px;
+  height:18px;
+
+  border-radius:50%;
+
+  background:#60a5fa;
+
+  box-shadow:
+      0 0 15px #60a5fa,
+      0 0 35px #2563eb,
+      0 0 60px #93c5fd;
+
+  z-index:5;
+
+}
+
+
+
+
+
+.gallery-item.left::after{
+
+  content:"";
+
+  position:absolute;
+
+  top:50%;
+
+  left:50%;
+
+  width:170px;
+
+  height:2px;
+
+  background:linear-gradient(
+      to left,
+      #60a5fa,
+      transparent
+  );
+  
+
+}
+
+
+
+.gallery-item.right::after{
+
+  content:"";
+
+  position:absolute;
+
+  top:50%;
+
+  right:50%;
+
+  width:170px;
+
+  height:2px;
+
+  background:linear-gradient(
+      to right,
+      #60a5fa,
+      transparent
+  );
+
+}
 
   .glass-card{
 
