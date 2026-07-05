@@ -58,20 +58,6 @@ export default function Gallery() {
       </motion.div>
 
 
-        <motion.div
-        className="glass-card"
-        whileHover={{
-          rotateY: -10,
-          rotateX: 5,
-          scale: 1.05
-        }}
-      >
-        <img
-          src="/assets/pie3.jpg"
-          alt="Gracie"
-        />
-      </motion.div>
-
 
 
            <motion.div
