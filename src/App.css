@@ -1928,7 +1928,7 @@ body::after{
 
   letter-spacing:6px;
 
-  text-transform:uppercase;
+  
 
   animation:
     loadingGlow 1.5s infinite;

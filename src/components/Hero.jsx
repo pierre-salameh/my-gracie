@@ -133,6 +133,15 @@ they became memories.
           Explore Our Story
         </motion.button>
 
+        {launch && (
+
+          <div className="universe-loading">
+
+           Wait ...
+
+          </div>
+
+        )}
 
       </motion.div>
 
